@@ -1,0 +1,49 @@
+body {
+  background-image: url(../img/bg2.svg);
+  background-size: cover;
+}
+
+#board div {
+  background-color: grey;
+  border: 1px solid grey;
+  box-sizing: border-box;
+  float: left;
+  width: 24px;
+  height: 24px;
+}
+
+#board {
+  padding-top: 100px;
+  width: calc(26 * 24px);
+  margin: auto;
+}
+
+#board .snake {
+  background-image: url(../img/872px-Android_robot.svg.png);
+}
+
+#board .apple {
+  background-image: url(../img/2962084.svg);
+}
+
+#score {
+  color: #2b2b2b;
+  margin: 270px 0px 0px 210px;
+  width: 200px;
+  height: 150px;
+  background-image: url(../img/pancarte.png);
+  float: left;
+  font-family: 'Black Ops One', cursive;
+  color: #3a3a3a;
+}
+
+#score p {
+  text-align: center;
+  margin-top: 65px;
+  margin-bottom: 0px;
+  font-size: 34px;
+}
+
+#score #num {
+  margin-top: 0px;
+}

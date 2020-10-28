@@ -1,0 +1,47 @@
+    body {
+        background-image: url(../img/bg2.svg);
+        background-size: cover;
+    }
+    
+    //However, if you run this code, nothing will show up. 
+    //This is because div elements by default are invisible, we need to give the some styling to make them visible on the page.
+    #board div {
+        background-color: grey;
+        border: 1px solid grey;
+        box-sizing: border-box; //The box-sizing property is necessary so that the width of the borders don’t make the cells wider than 24px.
+        float: left; //we need to float the elements. This moves them around so that there is not a line break after every element. Instead the page will now display as rows and columns of solid blocks.
+        width: 24px;
+        height: 24px;
+    }
+    
+    #board {
+        padding-top: 100px;
+        width: calc(26 * 24px); //If you view the above example, you will notice that the grid is not square,. We also need to limit the board in width, so that the grid is only 26 cells wide. We specify the width of #board to be 26 * 24px, and use the calc function in CSS to not have to calculate this number manually.
+        margin: auto; //The margin: auto means that the board will be centered horizontally on-screen.
+        .snake {
+            background-image: url(../img/872px-Android_robot.svg.png);
+        }
+        .apple {
+            background-image: url(../img/2962084.svg);
+        }
+    }
+    
+    #score {
+        color: rgb(43, 43, 43);
+        margin: 270px 0px 0px 210px;
+        width: 200px;
+        height: 150px;
+        background-image: url(../img/pancarte.png);
+        float: left;
+        font-family: 'Black Ops One', cursive;
+        color: #3a3a3a;
+        p {
+            text-align: center;
+            margin-top: 65px;
+            margin-bottom: 0px;
+            font-size: 34px;
+        }
+        #num {
+            margin-top: 0px;
+        }
+    }

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="initGame()" onkeydown="enterKey(event)">
+    <h1>Simple Snake</h1>
+    <!-- There should be 26 * 16 = 416 div elements in this list. look at boardWidth & boardHeight on JS-->
+    <div id="board"></div>
+    <div id="score">
+        <p>Score</p>
+        <p id="num">0</p>
+    </div>
+
+
+
+    <script src="snake.js"></script>
+</body>
+
+</html>
